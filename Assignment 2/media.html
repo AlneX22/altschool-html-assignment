@@ -7,13 +7,23 @@
     <h1>My Journey</h1>
     
     <section>
+        <h2>My Photo</h2>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="Assets/Default.jpg">
+            <source media="(min-width: 768px)" srcset="Assets/Default.jpg">
+            <source media="(max-width: 767px)" srcset="Assets/Default.jpg">
+            <img src="Assets/Default.jpg" alt="My Profile Picture" style="max-width:100%; height:auto;">
+        </picture>
+    </section>
+
+    <section>
         <h2>Introduction</h2>
+        <p>Listen to my brief introduction</p>
         <audio controls>
             <source src="intro.mp3" type="audio/mpeg">
             <source src="intro.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
-        <p>Listen to my brief introduction</p>
     </section>
     
     <section>
@@ -23,30 +33,7 @@
             <source src="work.ogg" type="video/ogg">
             Your browser does not support the video tag.
         </video>
-        <p>A glimpse of my projects</p>
-    </section>
-    
-    <section>
-        <h2>My Photo</h2>
-        <picture>
-            <source media="(min-width: 1200px)" srcset="large.jpg">
-            <source media="(min-width: 768px)" srcset="medium.jpg">
-            <source media="(max-width: 767px)" srcset="small.jpg">
-            <img src="default.jpg" alt="My Profile Picture">
-        </picture>
-        <p>This image responds to different screen sizes</p>
-    </section>
-    
-    <section>
-        <h2>My Vision</h2>
-        <iframe width="400" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vision"></iframe>
-        <p>Watch my vision for the future</p>
-    </section>
-    
-    <section>
-        <h2>Contact Me</h2>
-        <embed src="contact.svg" width="200" height="100" type="image/svg+xml">
-        <p>Vector graphic contact information</p>
+        <p>My video introduction</p>
     </section>
 </body>
 </html>
